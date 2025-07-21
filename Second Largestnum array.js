@@ -5,7 +5,7 @@ let FirstLargest = -Infinity;
 let SecondLargest = -Infinity;
 function FindSecondLargest(arr) {
     // #Corner cases
-    // if suppose Array have only one number need to print null
+    // if suppose Array have only one number in Array need to print null
     if(arr.length<2){
         return null
     }
