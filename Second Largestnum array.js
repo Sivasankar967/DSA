@@ -1,5 +1,5 @@
-let arr = [2]
-
+let arr = [2,6,3,8,9,10]
+// let arr[3]
 let FirstLargest = -Infinity;
 
 let SecondLargest = -Infinity;
