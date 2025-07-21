@@ -1,9 +1,14 @@
-let arr = [2, 5, 8, 9, 1, 0]
+let arr = [2]
 
 let FirstLargest = -Infinity;
 
 let SecondLargest = -Infinity;
 function FindSecondLargest(arr) {
+    // #Corner cases
+    // if suppose Array have only one number need to print null
+    if(arr.length<2){
+        return null
+    }
     for (i = 0; i < arr.length; i++) {
         if (arr[i] > FirstLargest) {
             SecondLargest = FirstLargest
