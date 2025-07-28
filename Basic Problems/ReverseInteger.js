@@ -8,7 +8,6 @@ function ReverseInteger(x) {
         x = Math.floor(x / 10)
     }
     return (xCopy < 0) ? -rev : rev
-    return rev
 }
 let result = ReverseInteger(123);
 console.log(result)
