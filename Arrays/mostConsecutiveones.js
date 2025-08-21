@@ -1,16 +1,19 @@
-let arr = [1, 1, 0, 1, 1, 1];
+let arr = [1, 1, 0, 1, 1, 1]
+function findMaxConsecutiveOnes(arr) {
+    let currentcount = 0;
+    let maxcount = 0;
 
-let x = 0;
-
-function mostConsecutiveones(arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] >= x) {
-            x = i
-
+        if (arr[i] === 1) {
+            currentcount++
+        }
+        else {
+            maxcount = Math.max(currentcount, maxcount);
+            currentcount = 0
         }
     }
-    return x
-}
-let result = mostConsecutiveones(arr);
-console.log(result)
+    return maxcount = Math.max(currentcount, maxcount);
+};
 
+let result = findMaxConsecutiveOnes(arr);
+console.log(result);
