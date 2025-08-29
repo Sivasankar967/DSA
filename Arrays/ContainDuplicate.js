@@ -1,15 +1,17 @@
-let arr = [1, 2, 3, 4];
-let x = 0;
-function containsDuplicate(arr) {
+// Timecomplexity: O(n)
+// Spacecomplexity: O(n)
+
+let arr = [1, 2, 3, 1];
+let hash = {};
+function DuplicateContain(arr) {
     for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] === arr[j]) {
-                return true;
-            }
+        if (hash[arr[i]] === true) {
+            return true
         }
+        hash[arr[i]] = true
     }
-    return false;
+    return false
 }
 
-let result = containsDuplicate(arr);
+let result = DuplicateContain(arr);
 console.log(result)
